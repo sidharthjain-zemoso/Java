@@ -18,9 +18,9 @@ import java.util.stream.Stream;
 
 public class Main {
 
-    static File[] getFilesMatchingPattern(String pathname, String regex){
+    static File[] getFilesMatchingPattern(String path, String regex){
         Pattern pattern = Pattern.compile(regex);
-        File directory = new File(pathname);
+        File directory = new File(path);
         FileFilter fileFilter = new FileFilter() {
             @Override
             public boolean accept(File pathname) {
