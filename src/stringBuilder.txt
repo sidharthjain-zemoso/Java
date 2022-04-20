@@ -1,0 +1,21 @@
+StringBuilder is a final class (it cannot be inherited) and extends abstract class called AbstractStringBuilder.
+
+Name of the class is in PascalCase and it is noun.
+Prefix Abstract is used for AbstractStringBuilder class.
+
+As per convention, all the public methods are at top and private methods are at bottom.
+public methods of StringBuilder class are:
+append, compareTo, appendCodePoint, delete, deleteCharAt, replace, insert, indexOf, lastIndexOf, reverse, toString
+
+All these functions are short and calls corresponding methods from super class.
+They all perform single job what they are intended of.
+
+private methods of StringBuilder class are:
+writeObject, readObject
+
+Names of methods are either verbs(eg: append, delete, insert etc) or verb phrases(eg: compareTo, appendTo etc);
+Names of methods follow camelcase. They are all short and informative.
+
+Variables of AbstractStringBuilder class are: value, coder, count
+They all have default access modifier (Available in the same package only)
+Since the scope is not public, names of variables are short.
