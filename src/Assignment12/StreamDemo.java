@@ -66,7 +66,7 @@ public class StreamDemo {
     }
 
     private Student youngestMaleStudentInDept(String dept){
-        return students.stream().filter(student -> student.getEngDepartment().equals(dept)).min((o1, o2) -> o1.getAge()<o2.getAge()?1:o1.getAge()==o2.getAge()?0:-1).get();
+        return students.stream().filter(student -> student.getEngDepartment().equals(dept)).min((o1, o2) -> o2.getAge()<o1.getAge()?1:o1.getAge()==o2.getAge()?0:-1).get();
     }
 
     private void maleAndFemaleCountIn(String dept){
